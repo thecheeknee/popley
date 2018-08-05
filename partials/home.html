@@ -7,7 +7,7 @@
                     <a ui-sref="collections">
                         <img class="d-block w-100" src="http://placeimg.com/1200/600/animals" alt="First slide">
                         <div class="banner-text bottom-left">
-                            <h3 class="text-center">Primary Slide</h3>
+                            <h3 class="text-center">Collection Slide</h3>
                             <button class="text-light"><em>Read More</em></button>
                         </div>
                     </a>
@@ -15,10 +15,10 @@
             </div>
             <div class="carousel-item">
                 <div class="full-width banner-wrapper">
-                    <a ui-sref="collections">
+                    <a ui-sref="catalogs">
                         <img class="d-block w-100" src="http://placeimg.com/1200/600/arch" alt="Second slide">
                         <div class="banner-text bottom-left">
-                            <h3 class="text-center">Primary Slide</h3>
+                            <h3 class="text-center">Catalog Slide</h3>
                             <button class="text-light"><em>Read More</em></button>
                         </div>
                     </a>
@@ -26,10 +26,10 @@
             </div>
             <div class="carousel-item">
                 <div class="full-width banner-wrapper">
-                    <a ui-sref="collections">
+                    <a ui-sref="categories">
                         <img class="d-block w-100" src="http://placeimg.com/1200/600/nature" alt="Third slide">
                         <div class="banner-text bottom-left">
-                            <h3 class="text-center">Primary Slide</h3>
+                            <h3 class="text-center">Category Slide</h3>
                             <button class="text-light"><em>Read More</em></button>
                         </div>
                     </a>
@@ -47,70 +47,60 @@
         </div>
     </section>
     <section>
-        <div class="frame">
-            <ul class="slidee">
-                <li>
-                    <div class="full-width banner-wrapper">
-                        <img class="d-block w-100" src="http://placeimg.com/400/400/nature" alt="First slide">
-                        <div class="banner-text bottom-left">
-                            <h3 class="text-center">First Banner</h3>
-                            <button class="text-light"><em>Read More</em></button>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="full-width banner-wrapper">
-                        <img class="d-block w-100" src="http://placeimg.com/400/400/arch" alt="Second slide">
-                        <div class="banner-text bottom-left">
-                            <h3 class="text-center">Second Banner</h3>
-                            <button class="text-light"><em>Read More</em></button>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="full-width banner-wrapper">
-                        <img class="d-block w-100" src="http://placeimg.com/400/400/people" alt="Second slide">
-                        <div class="banner-text bottom-left">
-                            <h3 class="text-center">Third Banner</h3>
-                            <button class="text-light"><em>Read More</em></button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+        <div id="secondaryBanner" class="frame" ng-include src="'partials/catalogs-list.html'">
         </div>
-        <hr>
     </section>
     <section>
-        <h3 class="text-center">Secondary Catalog/Collection<br>
-            <small class="text-muted">Top collections</small>
-        </h3>
+        <header>
+            <h1 class="text-center">Our Catalogs</h1>
+        </header>
         <div class="clearfix">&nbsp;</div>
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
-                <div class="full-width banner-wrapper">
+                <a ui-sref="catalogs" class="full-width banner-wrapper">
                     <img class="d-block w-100" src="http://placeimg.com/600/600/people" alt="Third slide">
                     <div class="banner-text bottom-left">
                         <h3 class="text-center">Collection Uno</h3>
                         <button class="text-light"><em>Read More</em></button>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-xs-12 col-sm-6">
                 <div class="row">
                     <div class="col-xs-6 col-sm-6">
-                        <img class="d-block w-100" src="http://placeimg.com/300/300/tech" alt="Third slide">
+                        <a ui-sref="catalogs" class="full-width banner-wrapper">
+                            <img class="d-block w-100" src="http://placeimg.com/300/300/tech" alt="Third slide">
+                            <div class="banner-text bottom-left">
+                                <h4 class="text-center">Catalog Slide</h4>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-xs-6 col-sm-6">
-                        <img class="d-block w-100" src="http://placeimg.com/300/300/animals" alt="Third slide">
+                        <a ui-sref="catalogs" class="full-width banner-wrapper">
+                            <img class="d-block w-100" src="http://placeimg.com/300/300/animals" alt="Third slide">
+                            <div class="banner-text bottom-left">
+                                <h4 class="text-center">Catalog Slide</h4>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="clearfix">&nbsp;</div>
                 <div class="row">
                     <div class="col-xs-6 col-sm-6">
-                        <img class="d-block w-100" src="http://placeimg.com/300/300/animals" alt="Third slide">
+                        <a ui-sref="catalogs" class="full-width banner-wrapper">
+                            <img class="d-block w-100" src="http://placeimg.com/300/300/animals" alt="Third slide">
+                            <div class="banner-text bottom-left">
+                                <h4 class="text-center">Catalog Slide</h4>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-xs-6 col-sm-6">
-                        <img class="d-block w-100" src="http://placeimg.com/300/300/tech" alt="Third slide">
+                        <a ui-sref="catalogs" class="full-width banner-wrapper">
+                            <img class="d-block w-100" src="http://placeimg.com/300/300/tech" alt="Third slide">
+                            <div class="banner-text bottom-left">
+                                <h4 class="text-center">Catalog Slide</h4>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -126,51 +116,13 @@
                 <a ui-sref="about">Read More</a>
             </div>
         </article>
+        <hr/>
     </section>
     <section>
-        <div class="frame">
-            <ul class="slidee">
-                <li>
-                    <div class="full-width banner-wrapper">
-                        <img class="d-block w-100" src="http://placeimg.com/400/400/tech" alt="First slide">
-                        <div class="banner-text bottom-left">
-                            <h4 class="text-center">Category Slide</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="full-width banner-wrapper">
-                        <img class="d-block w-100" src="http://placeimg.com/400/400/people" alt="Second slide">
-                        <div class="banner-text bottom-left">
-                            <h4 class="text-center">Category Slide</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="full-width banner-wrapper">
-                        <img class="d-block w-100" src="http://placeimg.com/400/400/animals" alt="Third slide">
-                        <div class="banner-text bottom-left">
-                            <h4 class="text-center">Secondary Slide</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="full-width banner-wrapper">
-                        <img class="d-block w-100" src="http://placeimg.com/400/400/arch" alt="Third slide">
-                        <div class="banner-text bottom-left">
-                            <h4 class="text-center">Secondary Slide</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="full-width banner-wrapper">
-                        <img class="d-block w-100" src="http://placeimg.com/400/400/any" alt="Third slide">
-                        <div class="banner-text bottom-left">
-                            <h4 class="text-center">Secondary Slide</h4>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+        <header>
+            <h1 class="text-center">Our Categories</h1>
+        </header>
+        <div id="categoriesContainer" class="frame" ng-include src="'partials/categories-list.html'">
         </div>
     </section>
 </div>
